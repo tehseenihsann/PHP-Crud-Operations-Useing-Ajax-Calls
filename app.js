@@ -186,8 +186,7 @@ const pgNumber = document.getElementById('pgNum');
 const nextBtn = document.getElementById('next');
 const dataTable = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
 
-let currentPage = 1;
-pgNumber.innerHTML = currentPage;
+let currentPage = Number(pgNumber.innerHTML);
 
 function showEntries() {
     const rows = dataTable.getElementsByTagName('tr');
@@ -219,7 +218,7 @@ function handlePagination(direction) {
 }
 
 selectEntry.addEventListener('change', () => {
-    currentPage = 1; // Reset to first page
+    currentPage = 1;
     showEntries();
 });
 

@@ -18,7 +18,6 @@ class Database
     }
 }
 
-
 class CrudOperations extends Database
 {
 
